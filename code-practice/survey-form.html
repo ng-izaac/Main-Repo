@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title> Survey Form</title>
+
+<style>
+#title{
+  text-align: center;
+}
+#description{
+  text-align: center;
+}
+body{
+  background-color: lightgrey;
+}
+p.first-name{
+  text-align: center;
+}
+p.last-name{
+  text-align: center;
+}
+p.age{
+  text-align: center;
+  padding-right: 60px;
+}
+p.email{
+  text-align: center;
+  padding-left: 30px;
+}
+p.how-much{
+  text-align: center;
+  right: 126px;
+}
+p.what-is{
+  text-align: center;
+  line-height: 10px;
+}
+div.beginner{
+  text-align: center;
+
+}
+div.intermediate{
+  text-align: center;
+}
+div.advance{
+text-align: center;
+}
+
+p.submit{
+  text-align: center;
+}
+
+p.comments{
+  text-align: center;
+}
+textarea.textarea{
+  text-align: center;
+}
+div.checkboxes{
+  text-align: center;
+}
+
+
+
+</style>
+</head>
+
+
+  <body>
+    <h1 id="title"> Survey Form for HTML & CSS Experience </h1>
+    <p id="description"> Give us a little bit more info about yourself!</p>
+
+<form id="survey-form">
+  <fieldset>
+      <legend style="text-align:center;">Survey Form</legend>
+
+
+      <p class="first-name">
+        First Name: <input type="text" maxlength="15" placeholder="John"
+         size="20" id="first-name" required>
+      </p>
+
+      <p class="last-name">
+        Last Name: <input type="text" maxlength="20" placeholder="Doe"
+        size="20" id="last-name" required>
+      </p>
+
+      <p class="age">
+        Age: <input type="number" min="1" max="110"  placeholder="53"
+        size="20" id="age" required>
+      </p>
+
+      <p class="email">
+        Email: <input type="email" size="20" maxlength="30" placeholder="johndoe@hotmail.com"
+         id="email" required>
+      </p>
+
+      <p class="how-much">
+        How much HTML & CSS experience do you have?
+        <select placeholder="Click here">
+          <! For creating a placeholder in a drop-down AKA select tag use the example below>
+          <option value="" disabled selected>Choose an Option</option>
+          <option value="none">No experience whatsoever</option>
+          <option value="1-2-years">1-2 Years</option>
+          <option value="3-5-years">3-5 Years</option>
+          <option value="5-years">5+ Years</option>
+        </select>
+      </p>
+
+
+         <!The name attribute specifies a name for the element.  For form elements it is also used as a reference when the data is submitted, >
+
+  <p class="what-is"> What is your technical background like?
+      <div class="beginner">
+          <input type="radio" name="skill" id="skill-1" value="beginner">
+          <label for"beginner">Beginner</label>
+      </div>
+      <div class="intermediate">
+          <input type="radio" name="skill" id="skill-2" value="intermediate">
+          <label for="intermediate">Intermediate</label>
+      </div>
+      <div class="advance">
+          <input type="radio" name="skill" id="skill-3" value="advance">
+          <label for="intermediate">Advance</label>
+      </div>
+</p>
+  <p style="text-align:center; ">Do you have any experience in the following? (Check all that apply)
+        <br>
+    <div class="checkboxes">
+      <input type="checkbox" name="experience1" value="php"> PHP<br>
+      <input type="checkbox" name="experience2" value="mysql"> MySQL<br>
+      <input type="checkbox" name="esperience3" value="javascript">Javascript<br>
+    </div>
+  </p>
+
+  <p class="comments">
+      <textarea name="comment" class="textarea" placeholder="Type your comments, questions, or any other feedback here." rows="8" cols="80"></textarea>
+  </p>
+
+        <p class="submit"><input type="Submit" id="submit-button"></p>
+
+  </fieldset>
+</form>
+
+
+</body>
+</html>
